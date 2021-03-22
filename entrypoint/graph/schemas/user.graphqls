@@ -1,0 +1,9 @@
+type User @goModel(model: "github.com/mr4torr/go-lang-graphql/entity.User") {
+  id: ID!
+}
+
+input NewUser {
+  name: String!
+  password: String!
+  isAdmin: Boolean!
+}

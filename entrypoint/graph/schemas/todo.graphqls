@@ -1,0 +1,16 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type Todo {
+  id: ID!
+  text: String!
+  done: Boolean!
+  user: User!
+  active: Boolean!
+}
+
+input NewTodo {
+  text: String!
+  userId: ID!
+}
